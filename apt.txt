@@ -1,2 +1,3 @@
 libzbar0
+libzbar0t64
 libzbar-dev
