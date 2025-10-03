@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: web-dat-ten-xuong
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "streamlit run main.py --server.port=$PORT --server.address=0.0.0.0"
+    envVars:
+      - key: LD_LIBRARY_PATH
+        value: /usr/lib:/usr/local/lib
